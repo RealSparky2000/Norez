@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 
 module.exports.run = async (client, message, args, ops) => {
   
-    if(args[0] == "Core") {
+    if(args[0] === "Core" || args[0] === "core") {
     
    let Core = new Discord.RichEmbed()
    .setTitle('Commands in category: Core')
@@ -32,10 +32,10 @@ module.exports.run = async (client, message, args, ops) => {
    return message.channel.send(Utilities)
     return;
   }
-    if(args.slice(0).join(" ") == "Server Options" || "server options") {
+    if(args.slice(0).join(" ") === "Server Options" || args.slice(0).join(" ") === "server options") {
     
    let serverOptions = new Discord.RichEmbed()
-   .setTitle('Commands in category: Clash Royale')
+   .setTitle('Commands in category: Server Options')
    .setColor('RANDOM')
    .setFooter('Choose one command that you want! :)')
    .setDescription(client.commands.filter(cmd => cmd.help.category === 'Server Options').map(cmd => `Name: **\`${cmd.help.name}\`** ${cmd.help.desc}`).join("\n "))
