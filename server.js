@@ -48,7 +48,7 @@ client.on('ready', () => {
     `Playing on ${client.guilds.size} servers :)`,
     `My default prefix is n.`,
     `Need some help? n.help`,
-    `Collecting statistics from games`,
+    `Listening to music...`,
     `Wanna see updates? n.changelog`
 ]
   console.log('Laucnhed!')
