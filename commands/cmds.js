@@ -34,12 +34,12 @@ module.exports.run = async (client, message, args, ops) => {
   }
     if(args.slice(0).join(" ") == "Server Options" || "server options") {
     
-   let ServerOptions = new Discord.RichEmbed()
-   .setTitle('Commands in category: Server Options')
+   let serverOptions = new Discord.RichEmbed()
+   .setTitle('Commands in category: Clash Royale')
    .setColor('RANDOM')
    .setFooter('Choose one command that you want! :)')
    .setDescription(client.commands.filter(cmd => cmd.help.category === 'Server Options').map(cmd => `Name: **\`${cmd.help.name}\`** ${cmd.help.desc}`).join("\n "))
-   return message.channel.send(ServerOptions)
+   return message.channel.send(serverOptions)
     return;
   }
     if(args[0] == "Vimeworld") {
