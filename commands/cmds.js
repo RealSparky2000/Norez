@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args, ops) => {
    return message.channel.send(Core)
     return;
     }
-  if(args[0] == "Fun") {
+  if(args[0] === "Fun" || args[0] === "fun") {
     
    let fun = new Discord.RichEmbed()
    .setTitle('Commands in category: Fun')
@@ -22,7 +22,7 @@ module.exports.run = async (client, message, args, ops) => {
    return message.channel.send(fun)
     return;
   }
-  if(args[0] == "Utilities") {
+  if(args[0] === "Utilities" || args[0] === "utilities") {
     
    let Utilities = new Discord.RichEmbed()
    .setTitle('Commands in category: Utilities')
@@ -42,7 +42,7 @@ module.exports.run = async (client, message, args, ops) => {
    return message.channel.send(serverOptions)
     return;
   }
-    if(args[0] == "Vimeworld") {
+    if(args[0] === "Vimeworld" || args[0] === "vimeworld") {
     
    let Vimeworld = new Discord.RichEmbed()
    .setTitle('Commands in category: Vimeworld')
@@ -52,7 +52,7 @@ module.exports.run = async (client, message, args, ops) => {
    return message.channel.send(Vimeworld)
     return;
   }
-    if(args.slice(0).join(" ") == "Fortnite") {
+    if(args.slice(0).join(" ") === "Fortnite" || args.slice(0).join(" ") === "fortnite") {
     
    let Fortnite = new Discord.RichEmbed()
    .setTitle('Commands in category: Fortnite')
@@ -62,7 +62,7 @@ module.exports.run = async (client, message, args, ops) => {
    return message.channel.send(Fortnite)
     return;
   }
-    if(args[0] == "osu!") {
+    if(args[0] === "osu!") {
     
    let osu = new Discord.RichEmbed()
    .setTitle('Commands in category: osu!')
@@ -72,7 +72,7 @@ module.exports.run = async (client, message, args, ops) => {
    return message.channel.send(osu)
     return;
   }
-    if(args.slice(0).join(" ") == "Clash Royale" || "clash royale") {
+    if(args.slice(0).join(" ") === "Clash Royale" || args.slice(0).join(" ") === "clash royale") {
     
    let ClashRoyale = new Discord.RichEmbed()
    .setTitle('Commands in category: Clash Royale')
@@ -82,7 +82,7 @@ module.exports.run = async (client, message, args, ops) => {
    return message.channel.send(ClashRoyale)
     return;
   }
-  if(args.slice(0).join(" ") == "Geometry Dash" || "geometry dash") {
+  if(args.slice(0).join(" ") === "Geometry Dash" || args.slice(0).join(" ") === "geometry dash") {
     
     let GeometryDash = new Discord.RichEmbed()
    .setTitle('Commands in category: Geometry Dash')
