@@ -32,7 +32,7 @@ module.exports.run = async (client, message, args, ops) => {
    return message.channel.send(Utilities)
     return;
   }
-    if(args.slice(0).join(" ") == "Server Options") {
+    if(args.slice(0).join(" ") == "Server Options" && "server options") {
     
    let ServerOptions = new Discord.RichEmbed()
    .setTitle('Commands in category: Server Options')
@@ -72,7 +72,7 @@ module.exports.run = async (client, message, args, ops) => {
    return message.channel.send(osu)
     return;
   }
-    if(args.slice(0).join(" ") == "Clash Royale") {
+    if(args.slice(0).join(" ") == "Clash Royale" && "clash royale") {
     
    let ClashRoyale = new Discord.RichEmbed()
    .setTitle('Commands in category: Clash Royale')
@@ -82,7 +82,7 @@ module.exports.run = async (client, message, args, ops) => {
    return message.channel.send(ClashRoyale)
     return;
   }
-  if(args.slice(0).join(" ") == "Geometry Dash") {
+  if(args.slice(0).join(" ") == "Geometry Dash" && "geometry dash") {
     
     let GeometryDash = new Discord.RichEmbed()
    .setTitle('Commands in category: Geometry Dash')
