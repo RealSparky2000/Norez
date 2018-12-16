@@ -14,7 +14,7 @@ module.exports.run = (client, message, args, tools) => {
 
     var ping = client.ping
     const embed = new Discord.RichEmbed()
-    .setTitle(':gear: GamingAPIBot Statistics')
+    .setTitle(':gear: Norez\'s Statistics')
     .setThumbnail(`https://cdn.glitch.com/748c6eab-747a-4a36-bac7-d7c44ecea839%2FIcon-Discord.png?1541871811796`)
     .setDescription('A simple statisctics command that shows characters of that bot.')
     .addField(':minidisc: Memory Usage', `Memory usage: ${Math.round(used * 100) / 100}MB`)
