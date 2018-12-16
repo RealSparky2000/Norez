@@ -45,7 +45,7 @@ client.on("message", async message => {
 });
 client.on('ready', () => { 
   var gamestatus = [
-    `Playing on ${client.guilds.size} server`,
+    `Playing on ${client.guilds.size} servers :)`,
     `My default prefix is n.`,
     `Need some help? n.help`,
     `Collecting statistics from games`,
