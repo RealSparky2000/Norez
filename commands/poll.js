@@ -28,6 +28,6 @@ module.exports.run = async (bot, message, args, ops) => {
 module.exports.help = {
   name: "poll",
   category: "Utilities",
-  desc: "Creating an a vote.",
+  desc: "Creating a vote.",
   usage: "gb!po;; <text>"
 }
