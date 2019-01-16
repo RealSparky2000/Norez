@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args, ops) => {
 		return;
 	}
     
-    if (!args[0]) return message.channel.send('Error! Proper usage: **g! <question>**');
+    if (!args[0]) return message.channel.send('Error! Proper usage: *n.<question>**');
     
     const embed = new Discord.RichEmbed()
         .setColor("RANDOM") 
