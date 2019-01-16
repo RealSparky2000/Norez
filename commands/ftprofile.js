@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
     let platform = args[1];
 
     if(!username) return message.channel.send("Please, provide a users nickname! (Fortnite)")
-    if(!platform) return message.channel.send('Did you provide a platform? Proper usage: **g!ftprofile <username> <platform>**') 
+    if(!platform) return message.channel.send('Did you provide a platform? Proper usage: **n.ftprofile <username> <platfor, pc/xbl/psn>**') 
 
     let data = fortnite.user(username, platform).then(data => {
         let stats = data.stats;
