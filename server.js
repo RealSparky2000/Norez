@@ -55,4 +55,4 @@ client.on('ready', () => {
   client.user.setActivity((gamestatus[Math.floor(Math.random() * gamestatus.length)])) // Game Status. ( Rename Above In gamestatus )
     }, 60000)
 client.on('error', console.error);
-client.login(process.env.TOKEN)
+client.login()
